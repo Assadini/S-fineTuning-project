@@ -1,0 +1,33 @@
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local environments and editor files
+.venv/
+venv/
+env/
+.env
+.env.*
+.vscode/
+
+# Training outputs and downloaded model artifacts
+checkpoints/
+checkpoint-*/
+outputs/
+*.safetensors
+*.bin
+*.pth
+*.pt
+*.gguf
+*.zip
+
+# Local logs and generated evaluation output
+wandb/
+logs/
+*.log
+evaluation-results/
+
+# Temporary Colab and upload files
+content/
+adapter_extract/
