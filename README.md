@@ -16,11 +16,8 @@ The Gemma model is downloaded separately; it is not included here. Accept Google
 | `datasets/validation.jsonl` | 5 | Validation |
 | `datasets/test.jsonl` | 10 | Held-out evaluation |
 
-The answers in all three splits use « Idée clé », « Exemple », « À toi », in that order. The notebook does not prepend a tutor instruction to the questions; the format is taught through the answer examples. The current 150-example training set has not yet been used for a training run.
+The answers in all three splits use « Idée clé », « Exemple », « À toi », in that order. The notebook does not prepend a tutor instruction to the questions; the format is taught through the answer examples. The 150-example training set completed one epoch and 19 steps. The training log showed a training loss of 1.732579 and validation loss of 1.917565; the final trainer summary reported an aggregate training loss of 2.051600 and a runtime of about 115 seconds. These metrics do not establish answer quality. The earlier completed run used a separate 40-example training set.
 
-## First experiment
-
-The completed run used an earlier training set of 40 examples. It ran for one epoch and reported 5 steps, a training loss of about 3.23, and a runtime of about 119 seconds. This loss is not an accuracy score. A qualitative comparison showed more structured and supportive answers in some cases, but also imprecise or incomplete responses.
 
 ## Files
 
@@ -29,4 +26,3 @@ The completed run used an earlier training set of 40 examples. It ran for one ep
 - `README-PROMPT-TESTS.md` — prompts and comparison code
 - `tests.md` — recorded comparison outputs
 
-Do not add Hugging Face tokens or Google credentials to the project.
